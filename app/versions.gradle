@@ -1,0 +1,14 @@
+ext {
+  support7Version = '27.1.1'
+  constraintVersion = '1.1.0'
+  retrofitVersion = '2.4.0'
+  javaxAnnotation = '10.0-b28'
+  butterKnifeVersion = '8.8.1'
+  glideVersion = '4.7.1'
+
+  junitVersion = '4.12'
+  mockitoVersion = '2.0.111-beta'
+
+  runnerVersion = '1.0.1'
+  espressoVersion = '3.0.1'
+}
