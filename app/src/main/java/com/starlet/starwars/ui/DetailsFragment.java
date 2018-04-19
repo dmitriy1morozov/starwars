@@ -120,6 +120,7 @@ public class DetailsFragment extends BottomSheetDialogFragment implements OnChar
 				mVehiclesText.setText(String.valueOf(mPerson.getVehicles().size()));
 		}
 
+		//Left without Loader to show another approach with weak reference
 		private void getCharacter(int id, OnCharacterRequest onCharacterRequest){
 				final WeakReference<OnCharacterRequest> callback = new WeakReference<>(onCharacterRequest);
 

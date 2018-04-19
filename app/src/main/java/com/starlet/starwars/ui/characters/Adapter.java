@@ -16,7 +16,7 @@ public class Adapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 		private final ArrayList<Person> mCharacters;
 		private final OnItemClickListener mOnItemClickListener;
 
-		public Adapter(Context context, ArrayList<Person> characters,
+		Adapter(Context context, ArrayList<Person> characters,
 				OnItemClickListener onItemClickListener) {
 				mContext = context;
 				mCharacters = characters;

@@ -26,7 +26,7 @@ public class Holder extends RecyclerView.ViewHolder {
 				sGenders = new ArrayList<>(Arrays.asList(genders));
 		}
 
-		public Holder(View itemView) {
+		Holder(View itemView) {
 				super(itemView);
 				itemView.setLayoutParams(new RecyclerView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
 				mNameText = itemView.findViewById(R.id.text_main_name);
@@ -38,32 +38,32 @@ public class Holder extends RecyclerView.ViewHolder {
 				return mId;
 		}
 
-		public void setId(int id) {
+		private void setId(int id) {
 				mId = id;
 		}
 
-		public String getName() {
+		private String getName() {
 				return mNameText.getText().toString();
 		}
 
-		public void setName(String name) {
+		private void setName(String name) {
 				mNameText.setText(name);
 		}
 
-		public String getBirth() {
+		private String getBirth() {
 				return mBirthText.getText().toString();
 		}
 
-		public void setBirth(String birth) {
+		private void setBirth(String birth) {
 				mBirthText.setText(birth);
 		}
 
-		public String getGender() {
+		private String getGender() {
 				int level = mIconImage.getDrawable().getLevel();
 				return sGenders.get(level);
 		}
 
-		public void setGender(String gender) {
+		private void setGender(String gender) {
 				int level = sGenders.indexOf(gender);
 				if(level == -1){
 						level = 0;
