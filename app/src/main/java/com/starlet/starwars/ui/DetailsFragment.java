@@ -49,19 +49,20 @@ public class DetailsFragment extends BottomSheetDialogFragment implements OnChar
 
 		@Override public void onCreate(@Nullable Bundle savedInstanceState) {
 				super.onCreate(savedInstanceState);
-				if(mRetrofit == null){
+				if (mRetrofit == null) {
 						mRetrofit = Swapi.mRetrofit.create(Swapi.class);
 				}
 		}
 
-		@Override public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+		@Override public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
+				Bundle savedInstanceState) {
 				Bundle bundle = getArguments();
-				if(bundle == null){
+				if (bundle == null) {
 						bundle = savedInstanceState;
 				}
-				if(bundle == null){
+				if (bundle == null) {
 						Toast.makeText(getActivity(), "Something went wrong", Toast.LENGTH_SHORT).show();
-				} else{
+				} else {
 						mId = bundle.getInt("id");
 				}
 				View rootView = inflater.inflate(R.layout.fragment_details, container, false);
@@ -88,9 +89,11 @@ public class DetailsFragment extends BottomSheetDialogFragment implements OnChar
 		@OnClick(R.id.button_details_close) public void onClose() {
 				this.dismiss();
 		}
+
 		@OnClick(R.id.button_details_open_browser) public void onOpenBrowser() {
-				if(mPerson == null){
-						Toast.makeText(getActivity(), "Character data not yet downloaded. Please wait", Toast.LENGTH_SHORT).show();
+				if (mPerson == null) {
+						Toast.makeText(getActivity(), "Character data not yet downloaded. Please wait",
+								Toast.LENGTH_SHORT).show();
 						return;
 				}
 				Intent openBrowserIntent = new Intent(Intent.ACTION_VIEW);
@@ -101,10 +104,10 @@ public class DetailsFragment extends BottomSheetDialogFragment implements OnChar
 
 		//==============================================================================================
 		@Override public void onCharacterReceived(Person person) {
-				if(person != null){
+				if (person != null) {
 						mPerson = person;
 						displayPersonDetails();
-				} else{
+				} else {
 						Log.d("MyLogs", "onCharacterReceived: Received null");
 				}
 		}
@@ -121,23 +124,25 @@ public class DetailsFragment extends BottomSheetDialogFragment implements OnChar
 		}
 
 		//Left without Loader to show another approach with weak reference
-		private void getCharacter(int id, OnCharacterRequest onCharacterRequest){
+		private void getCharacter(int id, OnCharacterRequest onCharacterRequest) {
 				final WeakReference<OnCharacterRequest> callback = new WeakReference<>(onCharacterRequest);
 
 				Call<Person> call = mRetrofit.getCharacter(String.valueOf(id));
 				call.enqueue(new Callback<Person>() {
-						@Override public void onResponse(@NonNull Call<Person> call, @NonNull
-								Response<Person> response) {
+						@Override
+						public void onResponse(@NonNull Call<Person> call, @NonNull Response<Person> response) {
 								assert response.body() != null;
 								Person person = response.body();
-								if(callback.get() != null){
+								if (callback.get() != null) {
 										callback.get().onCharacterReceived(person);
 								}
 						}
 
 						@Override public void onFailure(@NonNull Call<Person> call, @NonNull Throwable t) {
 								String errorDetails = t.getMessage();
-								Toast.makeText(getActivity(), "Oops. Something went wrong with API call. " + errorDetails, Toast.LENGTH_SHORT).show();
+								Toast.makeText(getActivity(),
+										"Oops. Something went wrong with API call. " + errorDetails, Toast.LENGTH_SHORT)
+										.show();
 						}
 				});
 		}

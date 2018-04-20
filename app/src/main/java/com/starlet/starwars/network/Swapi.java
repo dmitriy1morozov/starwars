@@ -13,9 +13,7 @@ public interface Swapi {
 
 		String BASE_URL = "https://swapi.co/api/";
 
-		@GET("people/{people_id}/") Call<Person> getCharacter(
-				@Path("people_id") String peopleId
-		);
+		@GET("people/{people_id}/") Call<Person> getCharacter(@Path("people_id") String peopleId);
 
 		@GET("people/") Call<People> getAllPeople();
 

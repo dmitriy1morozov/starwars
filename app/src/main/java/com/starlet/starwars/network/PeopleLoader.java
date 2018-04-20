@@ -13,8 +13,7 @@ import retrofit2.Response;
 public class PeopleLoader extends Loader<People> {
 
 		private final Call<People> mCall;
-		@Nullable
-		private People mPeople;
+		@Nullable private People mPeople;
 
 		public PeopleLoader(@NonNull Context context) {
 				super(context);
@@ -24,9 +23,9 @@ public class PeopleLoader extends Loader<People> {
 
 		@Override protected void onStartLoading() {
 				super.onStartLoading();
-				if(mPeople != null){
+				if (mPeople != null) {
 						deliverResult(mPeople);
-				}else{
+				} else {
 						forceLoad();
 				}
 		}
@@ -34,8 +33,8 @@ public class PeopleLoader extends Loader<People> {
 		@Override protected void onForceLoad() {
 				super.onForceLoad();
 				mCall.enqueue(new Callback<People>() {
-						@Override public void onResponse(@NonNull Call<People> call, @NonNull
-								Response<People> response) {
+						@Override
+						public void onResponse(@NonNull Call<People> call, @NonNull Response<People> response) {
 								assert response.body() != null;
 								mPeople = response.body();
 								deliverResult(mPeople);
@@ -43,7 +42,9 @@ public class PeopleLoader extends Loader<People> {
 
 						@Override public void onFailure(@NonNull Call<People> call, @NonNull Throwable t) {
 								String errorDetails = t.getMessage();
-								Toast.makeText(getContext(), "Oops. Something went wrong with API call. " + errorDetails, Toast.LENGTH_SHORT).show();
+								Toast.makeText(getContext(),
+										"Oops. Something went wrong with API call. " + errorDetails, Toast.LENGTH_SHORT)
+										.show();
 								deliverResult(null);
 						}
 				});
