@@ -6,216 +6,216 @@ import com.google.gson.annotations.SerializedName;
 
 @Generated("com.robohorse.robopojogenerator") public class Person {
 
-		@SerializedName("films") private List<String> films;
+   @SerializedName("films") private List<String> films;
 
-		@SerializedName("homeworld") private String homeworld;
+   @SerializedName("homeworld") private String homeworld;
 
-		@SerializedName("gender") private String gender;
+   @SerializedName("gender") private String gender;
 
-		@SerializedName("skin_color") private String skinColor;
+   @SerializedName("skin_color") private String skinColor;
 
-		@SerializedName("edited") private String edited;
+   @SerializedName("edited") private String edited;
 
-		@SerializedName("created") private String created;
+   @SerializedName("created") private String created;
 
-		@SerializedName("mass") private String mass;
+   @SerializedName("mass") private String mass;
 
-		@SerializedName("vehicles") private List<String> vehicles;
+   @SerializedName("vehicles") private List<String> vehicles;
 
-		@SerializedName("url") private String url;
+   @SerializedName("url") private String url;
 
-		@SerializedName("hair_color") private String hairColor;
+   @SerializedName("hair_color") private String hairColor;
 
-		@SerializedName("birth_year") private String birthYear;
+   @SerializedName("birth_year") private String birthYear;
 
-		@SerializedName("eye_color") private String eyeColor;
+   @SerializedName("eye_color") private String eyeColor;
 
-		@SerializedName("species") private List<String> species;
+   @SerializedName("species") private List<String> species;
 
-		@SerializedName("starships") private List<String> starships;
+   @SerializedName("starships") private List<String> starships;
 
-		@SerializedName("name") private String name;
+   @SerializedName("name") private String name;
 
-		@SerializedName("height") private String height;
+   @SerializedName("height") private String height;
 
-		public void setFilms(List<String> films) {
-				this.films = films;
-		}
+   public void setFilms(List<String> films) {
+      this.films = films;
+   }
 
-		public List<String> getFilms() {
-				return films;
-		}
+   public List<String> getFilms() {
+      return films;
+   }
 
-		public void setHomeworld(String homeworld) {
-				this.homeworld = homeworld;
-		}
+   public void setHomeworld(String homeworld) {
+      this.homeworld = homeworld;
+   }
 
-		public String getHomeworld() {
-				return homeworld;
-		}
+   public String getHomeworld() {
+      return homeworld;
+   }
 
-		public void setGender(String gender) {
-				this.gender = gender;
-		}
+   public void setGender(String gender) {
+      this.gender = gender;
+   }
 
-		public String getGender() {
-				return gender;
-		}
+   public String getGender() {
+      return gender;
+   }
 
-		public void setSkinColor(String skinColor) {
-				this.skinColor = skinColor;
-		}
+   public void setSkinColor(String skinColor) {
+      this.skinColor = skinColor;
+   }
 
-		public String getSkinColor() {
-				return skinColor;
-		}
+   public String getSkinColor() {
+      return skinColor;
+   }
 
-		public void setEdited(String edited) {
-				this.edited = edited;
-		}
+   public void setEdited(String edited) {
+      this.edited = edited;
+   }
 
-		public String getEdited() {
-				return edited;
-		}
+   public String getEdited() {
+      return edited;
+   }
 
-		public void setCreated(String created) {
-				this.created = created;
-		}
+   public void setCreated(String created) {
+      this.created = created;
+   }
 
-		public String getCreated() {
-				return created;
-		}
+   public String getCreated() {
+      return created;
+   }
 
-		public void setMass(String mass) {
-				this.mass = mass;
-		}
+   public void setMass(String mass) {
+      this.mass = mass;
+   }
 
-		public String getMass() {
-				return mass;
-		}
+   public String getMass() {
+      return mass;
+   }
 
-		public void setVehicles(List<String> vehicles) {
-				this.vehicles = vehicles;
-		}
+   public void setVehicles(List<String> vehicles) {
+      this.vehicles = vehicles;
+   }
 
-		public List<String> getVehicles() {
-				return vehicles;
-		}
+   public List<String> getVehicles() {
+      return vehicles;
+   }
 
-		public void setUrl(String url) {
-				this.url = url;
-		}
+   public void setUrl(String url) {
+      this.url = url;
+   }
 
-		public String getUrl() {
-				return url;
-		}
+   public String getUrl() {
+      return url;
+   }
 
-		public void setHairColor(String hairColor) {
-				this.hairColor = hairColor;
-		}
+   public void setHairColor(String hairColor) {
+      this.hairColor = hairColor;
+   }
 
-		public String getHairColor() {
-				return hairColor;
-		}
+   public String getHairColor() {
+      return hairColor;
+   }
 
-		public void setBirthYear(String birthYear) {
-				this.birthYear = birthYear;
-		}
+   public void setBirthYear(String birthYear) {
+      this.birthYear = birthYear;
+   }
 
-		public String getBirthYear() {
-				return birthYear;
-		}
+   public String getBirthYear() {
+      return birthYear;
+   }
 
-		public void setEyeColor(String eyeColor) {
-				this.eyeColor = eyeColor;
-		}
+   public void setEyeColor(String eyeColor) {
+      this.eyeColor = eyeColor;
+   }
 
-		public String getEyeColor() {
-				return eyeColor;
-		}
+   public String getEyeColor() {
+      return eyeColor;
+   }
 
-		public void setSpecies(List<String> species) {
-				this.species = species;
-		}
+   public void setSpecies(List<String> species) {
+      this.species = species;
+   }
 
-		public List<String> getSpecies() {
-				return species;
-		}
+   public List<String> getSpecies() {
+      return species;
+   }
 
-		public void setStarships(List<String> starships) {
-				this.starships = starships;
-		}
+   public void setStarships(List<String> starships) {
+      this.starships = starships;
+   }
 
-		public List<String> getStarships() {
-				return starships;
-		}
+   public List<String> getStarships() {
+      return starships;
+   }
 
-		public void setName(String name) {
-				this.name = name;
-		}
+   public void setName(String name) {
+      this.name = name;
+   }
 
-		public String getName() {
-				return name;
-		}
+   public String getName() {
+      return name;
+   }
 
-		public void setHeight(String height) {
-				this.height = height;
-		}
+   public void setHeight(String height) {
+      this.height = height;
+   }
 
-		public String getHeight() {
-				return height;
-		}
+   public String getHeight() {
+      return height;
+   }
 
-		@Override public String toString() {
-				return "Person{"
-						+ "films = '"
-						+ films
-						+ '\''
-						+ ",homeworld = '"
-						+ homeworld
-						+ '\''
-						+ ",gender = '"
-						+ gender
-						+ '\''
-						+ ",skin_color = '"
-						+ skinColor
-						+ '\''
-						+ ",edited = '"
-						+ edited
-						+ '\''
-						+ ",created = '"
-						+ created
-						+ '\''
-						+ ",mass = '"
-						+ mass
-						+ '\''
-						+ ",vehicles = '"
-						+ vehicles
-						+ '\''
-						+ ",url = '"
-						+ url
-						+ '\''
-						+ ",hair_color = '"
-						+ hairColor
-						+ '\''
-						+ ",birth_year = '"
-						+ birthYear
-						+ '\''
-						+ ",eye_color = '"
-						+ eyeColor
-						+ '\''
-						+ ",species = '"
-						+ species
-						+ '\''
-						+ ",starships = '"
-						+ starships
-						+ '\''
-						+ ",name = '"
-						+ name
-						+ '\''
-						+ ",height = '"
-						+ height
-						+ '\''
-						+ "}";
-		}
+   @Override public String toString() {
+      return "Person{"
+          + "films = '"
+          + films
+          + '\''
+          + ",homeworld = '"
+          + homeworld
+          + '\''
+          + ",gender = '"
+          + gender
+          + '\''
+          + ",skin_color = '"
+          + skinColor
+          + '\''
+          + ",edited = '"
+          + edited
+          + '\''
+          + ",created = '"
+          + created
+          + '\''
+          + ",mass = '"
+          + mass
+          + '\''
+          + ",vehicles = '"
+          + vehicles
+          + '\''
+          + ",url = '"
+          + url
+          + '\''
+          + ",hair_color = '"
+          + hairColor
+          + '\''
+          + ",birth_year = '"
+          + birthYear
+          + '\''
+          + ",eye_color = '"
+          + eyeColor
+          + '\''
+          + ",species = '"
+          + species
+          + '\''
+          + ",starships = '"
+          + starships
+          + '\''
+          + ",name = '"
+          + name
+          + '\''
+          + ",height = '"
+          + height
+          + '\''
+          + "}";
+   }
 }

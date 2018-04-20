@@ -1,9 +1,9 @@
 <resources>
-		<string name="app_name">StarWars</string>
-		<string name="main_title">STARWARS</string>
+  <string name="app_name">StarWars</string>
+  <string name="main_title">STARWARS</string>
 
-		<string name="details_starships_units">STARSHIPS</string>
-		<string name="details_films_units">FILMS</string>
-		<string name="details_vehicles_units">VEHICLES</string>
-		<string name="details_open">Open in Browser</string>
+  <string name="details_starships_units">STARSHIPS</string>
+  <string name="details_films_units">FILMS</string>
+  <string name="details_vehicles_units">VEHICLES</string>
+  <string name="details_open">Open in Browser</string>
 </resources>
