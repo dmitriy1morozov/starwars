@@ -5,8 +5,8 @@
 		xmlns:tools="http://schemas.android.com/tools"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		tools:context=".ui.SplashActivity"
 		android:background="@color/colorPrimaryDark"
+		tools:context=".ui.SplashActivity"
 		>
 
 		<android.support.constraint.Guideline
@@ -21,12 +21,12 @@
 				android:id="@+id/logo_splash"
 				android:layout_width="0dp"
 				android:layout_height="0dp"
-				tools:background="@drawable/splash_logo"
 				app:layout_constraintBottom_toBottomOf="parent"
 				app:layout_constraintDimensionRatio="1:1"
 				app:layout_constraintLeft_toRightOf="@id/guideline_left"
 				app:layout_constraintRight_toLeftOf="@id/guideline_right"
 				app:layout_constraintTop_toTopOf="parent"
+				tools:background="@drawable/splash_logo"
 				/>
 		<android.support.constraint.Guideline
 				android:id="@+id/guideline_right"

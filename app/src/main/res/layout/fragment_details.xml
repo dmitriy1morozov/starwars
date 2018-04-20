@@ -13,78 +13,78 @@
 				android:id="@+id/text_details_name"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
+				android:textColor="@color/colorPrimaryDark"
+				android:textSize="24sp"
 				app:layout_constraintLeft_toLeftOf="parent"
 				app:layout_constraintTop_toTopOf="parent"
 				tools:text="Luke Skywalker"
-				android:textSize="24sp"
-				android:textColor="@color/colorPrimaryDark"
 				/>
 
 		<TextView
 				android:id="@+id/text_details_height"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				app:layout_constraintLeft_toLeftOf="@id/text_details_name"
-				app:layout_constraintTop_toBottomOf="@id/text_details_name"
-				app:layout_constraintRight_toLeftOf="@+id/text_details_separator1"
 				android:layout_marginStart="0dp"
-				style="@style/DetailsGeneral"
+				app:layout_constraintLeft_toLeftOf="@id/text_details_name"
+				app:layout_constraintRight_toLeftOf="@+id/text_details_separator1"
+				app:layout_constraintTop_toBottomOf="@id/text_details_name"
 				tools:text="height"
+				style="@style/DetailsGeneral"
 				/>
 		<TextView
 				android:id="@+id/text_details_separator1"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				app:layout_constraintTop_toTopOf="@id/text_details_height"
+				android:text="|"
 				app:layout_constraintBottom_toBottomOf="@id/text_details_height"
 				app:layout_constraintLeft_toRightOf="@id/text_details_height"
 				app:layout_constraintRight_toLeftOf="@+id/text_details_mass"
+				app:layout_constraintTop_toTopOf="@id/text_details_height"
 				style="@style/DetailsGeneral"
-				android:text="|"
 				/>
 		<TextView
 				android:id="@+id/text_details_mass"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				app:layout_constraintTop_toTopOf="@id/text_details_height"
 				app:layout_constraintBottom_toBottomOf="@id/text_details_height"
 				app:layout_constraintLeft_toRightOf="@+id/text_details_separator1"
 				app:layout_constraintRight_toLeftOf="@+id/text_details_separator2"
-				style="@style/DetailsGeneral"
+				app:layout_constraintTop_toTopOf="@id/text_details_height"
 				tools:text="mass"
+				style="@style/DetailsGeneral"
 				/>
 
 		<TextView
 				android:id="@+id/text_details_separator2"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				app:layout_constraintTop_toTopOf="@id/text_details_height"
+				android:text="|"
 				app:layout_constraintBottom_toBottomOf="@id/text_details_height"
 				app:layout_constraintLeft_toRightOf="@+id/text_details_mass"
 				app:layout_constraintRight_toLeftOf="@+id/text_details_gender"
+				app:layout_constraintTop_toTopOf="@id/text_details_height"
 				style="@style/DetailsGeneral"
-				android:text="|"
 				/>
 		<TextView
 				android:id="@+id/text_details_gender"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				app:layout_constraintTop_toTopOf="@id/text_details_height"
 				app:layout_constraintBottom_toBottomOf="@id/text_details_height"
 				app:layout_constraintLeft_toRightOf="@+id/text_details_separator2"
-				style="@style/DetailsGeneral"
+				app:layout_constraintTop_toTopOf="@id/text_details_height"
 				tools:text="gender"
+				style="@style/DetailsGeneral"
 				/>
 
 		<android.support.v7.widget.AppCompatImageButton
 				android:id="@+id/button_details_close"
 				android:layout_width="0dp"
 				android:layout_height="0dp"
-				app:layout_constraintTop_toTopOf="@id/text_details_name"
-				app:layout_constraintBottom_toBottomOf="@id/text_details_name"
-				app:layout_constraintRight_toRightOf="parent"
-				app:layout_constraintDimensionRatio="1:1"
 				android:background="@drawable/ic_close"
+				app:layout_constraintBottom_toBottomOf="@id/text_details_name"
+				app:layout_constraintDimensionRatio="1:1"
+				app:layout_constraintRight_toRightOf="parent"
+				app:layout_constraintTop_toTopOf="@id/text_details_name"
 				/>
 
 
@@ -92,11 +92,11 @@
 				android:id="@+id/text_details_starships"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				app:layout_constraintTop_toBottomOf="@id/text_details_height"
+				android:layout_marginTop="24dp"
+				app:layout_constraintHorizontal_chainStyle="spread"
 				app:layout_constraintLeft_toLeftOf="parent"
 				app:layout_constraintRight_toLeftOf="@id/text_details_films"
-				app:layout_constraintHorizontal_chainStyle="spread"
-				android:layout_marginTop="24dp"
+				app:layout_constraintTop_toBottomOf="@id/text_details_height"
 				style="@style/DetailsAchievements"
 				/>
 
@@ -104,10 +104,10 @@
 				android:id="@+id/text_details_films"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				app:layout_constraintTop_toTopOf="@id/text_details_starships"
 				app:layout_constraintBottom_toBottomOf="@id/text_details_starships"
 				app:layout_constraintLeft_toRightOf="@id/text_details_starships"
 				app:layout_constraintRight_toLeftOf="@+id/text_details_vehicles"
+				app:layout_constraintTop_toTopOf="@id/text_details_starships"
 				style="@style/DetailsAchievements"
 				/>
 
@@ -115,10 +115,10 @@
 				android:id="@+id/text_details_vehicles"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				app:layout_constraintTop_toTopOf="@id/text_details_starships"
 				app:layout_constraintBottom_toBottomOf="@id/text_details_starships"
 				app:layout_constraintLeft_toRightOf="@id/text_details_films"
 				app:layout_constraintRight_toRightOf="parent"
+				app:layout_constraintTop_toTopOf="@id/text_details_starships"
 				style="@style/DetailsAchievements"
 				/>
 
@@ -126,46 +126,46 @@
 				android:id="@+id/text_details_starships_units"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				app:layout_constraintTop_toBottomOf="@id/text_details_starships"
+				android:text="@string/details_starships_units"
 				app:layout_constraintLeft_toLeftOf="@id/text_details_starships"
 				app:layout_constraintRight_toRightOf="@id/text_details_starships"
+				app:layout_constraintTop_toBottomOf="@id/text_details_starships"
 				style="@style/DetailsAchievementsUnits"
-				android:text="@string/details_starships_units"
 				/>
 
 		<TextView
 				android:id="@+id/text_details_films_units"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				app:layout_constraintTop_toBottomOf="@id/text_details_films"
+				android:text="@string/details_films_units"
 				app:layout_constraintLeft_toLeftOf="@id/text_details_films"
 				app:layout_constraintRight_toRightOf="@id/text_details_films"
+				app:layout_constraintTop_toBottomOf="@id/text_details_films"
 				style="@style/DetailsAchievementsUnits"
-				android:text="@string/details_films_units"
 				/>
 
 		<TextView
 				android:id="@+id/text_details_vehicles_units"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				app:layout_constraintTop_toBottomOf="@id/text_details_vehicles"
+				android:text="@string/details_vehicles_units"
 				app:layout_constraintLeft_toLeftOf="@id/text_details_vehicles"
 				app:layout_constraintRight_toRightOf="@id/text_details_vehicles"
+				app:layout_constraintTop_toBottomOf="@id/text_details_vehicles"
 				style="@style/DetailsAchievementsUnits"
-				android:text="@string/details_vehicles_units"
 				/>
 
 		<Button
 				android:id="@+id/button_details_open_browser"
 				android:layout_width="0dp"
 				android:layout_height="wrap_content"
-				app:layout_constraintTop_toBottomOf="@id/text_details_starships_units"
-				app:layout_constraintLeft_toLeftOf="@id/text_details_starships_units"
-				app:layout_constraintRight_toRightOf="@id/text_details_vehicles_units"
 				android:layout_marginTop="24dp"
+				android:background="@drawable/details_open_browser"
 				android:padding="4dp"
 				android:text="@string/details_open"
 				android:textAllCaps="false"
-				android:background="@drawable/details_open_browser"
+				app:layout_constraintLeft_toLeftOf="@id/text_details_starships_units"
+				app:layout_constraintRight_toRightOf="@id/text_details_vehicles_units"
+				app:layout_constraintTop_toBottomOf="@id/text_details_starships_units"
 				/>
 </android.support.constraint.ConstraintLayout>
