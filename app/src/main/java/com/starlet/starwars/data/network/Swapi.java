@@ -1,7 +1,7 @@
-package com.starlet.starwars.model.network;
+package com.starlet.starwars.data.network;
 
-import com.starlet.starwars.model.pojo.Characters;
-import com.starlet.starwars.model.pojo.Person;
+import com.starlet.starwars.data.pojo.Characters;
+import com.starlet.starwars.data.pojo.Person;
 import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

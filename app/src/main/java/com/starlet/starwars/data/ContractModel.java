@@ -1,7 +1,7 @@
-package com.starlet.starwars.model;
+package com.starlet.starwars.data;
 
-import com.starlet.starwars.model.pojo.Characters;
-import com.starlet.starwars.model.pojo.Person;
+import com.starlet.starwars.data.pojo.Characters;
+import com.starlet.starwars.data.pojo.Person;
 
 public interface ContractModel {
   interface LoadAllCharactersCallback{

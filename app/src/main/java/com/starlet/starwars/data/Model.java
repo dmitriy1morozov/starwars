@@ -1,9 +1,9 @@
-package com.starlet.starwars.model;
+package com.starlet.starwars.data;
 
 import android.support.annotation.NonNull;
-import com.starlet.starwars.model.network.Swapi;
-import com.starlet.starwars.model.pojo.Characters;
-import com.starlet.starwars.model.pojo.Person;
+import com.starlet.starwars.data.network.Swapi;
+import com.starlet.starwars.data.pojo.Characters;
+import com.starlet.starwars.data.pojo.Person;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

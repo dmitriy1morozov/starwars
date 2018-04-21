@@ -1,9 +1,9 @@
 package com.starlet.starwars.list;
 
-import com.starlet.starwars.model.ContractModel;
-import com.starlet.starwars.model.Model;
-import com.starlet.starwars.model.pojo.Characters;
-import com.starlet.starwars.model.pojo.Person;
+import com.starlet.starwars.data.ContractModel;
+import com.starlet.starwars.data.Model;
+import com.starlet.starwars.data.pojo.Characters;
+import com.starlet.starwars.data.pojo.Person;
 import java.util.ArrayList;
 import java.util.List;
 

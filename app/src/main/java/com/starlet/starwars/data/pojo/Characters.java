@@ -1,4 +1,4 @@
-package com.starlet.starwars.model.pojo;
+package com.starlet.starwars.data.pojo;
 
 import java.util.List;
 import javax.annotation.Generated;

@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.starlet.starwars.R;
-import com.starlet.starwars.model.pojo.Person;
+import com.starlet.starwars.data.pojo.Person;
 import java.util.ArrayList;
 import java.util.Arrays;
 

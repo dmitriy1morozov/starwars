@@ -1,6 +1,6 @@
 package com.starlet.starwars.details;
 
-import com.starlet.starwars.model.pojo.Person;
+import com.starlet.starwars.data.pojo.Person;
 
 public interface DetailsContract {
   interface Presenter {

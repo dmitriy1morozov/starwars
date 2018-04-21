@@ -13,7 +13,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.starlet.starwars.R;
-import com.starlet.starwars.model.pojo.Person;
+import com.starlet.starwars.data.pojo.Person;
 import com.starlet.starwars.details.DetailsFragment;
 import java.util.ArrayList;
 

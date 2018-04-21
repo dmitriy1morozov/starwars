@@ -19,7 +19,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.Unbinder;
 import com.starlet.starwars.R;
-import com.starlet.starwars.model.pojo.Person;
+import com.starlet.starwars.data.pojo.Person;
 
 public class DetailsFragment extends BottomSheetDialogFragment implements DetailsContract.View {
 
